@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteZen - Smart Note Organizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="logo3.png" alt="logo">
+                <span>NoteZen</span>
+            </a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#cta">Get Started</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu-btn" id="closeMenuBtn">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-menu-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#cta">Get Started</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Organize Your Thoughts with NoteZen</h1>
+                    <p>The smart way to capture, organize, and find your notes across all devices. Never lose an idea again.</p>
+                    <div class="hero-buttons">
+                        <a href="#cta" class="btn">Get Started</a>
+                        <a href="#features" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="banner4.png" alt="NoteZen App Interface">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Features Section -->
+<section class="features" id="features">
+    <div class="container">
+        <h2 class="section-title fade-in">Powerful Features</h2>
+        <div class="features-grid">
+            <!-- First row - 3 cards -->
+            <div class="feature-card fade-in slide-up">
+                <div class="feature-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3>Sync Across Devices</h3>
+                <p>Access your notes anywhere, anytime. NoteZen automatically syncs across all your devices in real-time.</p>
+            </div>
+            
+            <div class="feature-card fade-in slide-up" style="transition-delay: 0.2s;">
+                <div class="feature-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Smart Search</h3>
+                <p>Find exactly what you're looking for with our powerful search that recognizes text in images and handwriting.</p>
+            </div>
+            
+            <div class="feature-card fade-in slide-up" style="transition-delay: 0.4s;">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>End-to-End Encryption</h3>
+                <p>Your notes are protected with military-grade encryption. Only you can access your private thoughts.</p>
+            </div>
+
+            <!-- Second row - 2 cards -->
+            <div class="feature-card fade-in slide-up">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i> <!-- Icon for Quick Notes -->
+                </div>
+                <h3>Quick Notes</h3>
+                <p>Capture your thoughts instantly with a clean and intuitive interface.</p>
+            </div>
+
+            <div class="feature-card fade-in slide-up">
+                <div class="feature-icon">
+                    <i class="fas fa-tags"></i> <!-- Icon for Customizable Tags -->
+                </div>
+                <h3>Customizable Tags</h3>
+                <p>Organize your notes with personalized tags and categories for ultimate control.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title fade-in">What Our Users Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in slide-up">
+                    <div class="testimonial-content">
+                        <p>NoteZen has completely transformed how I organize my work and personal life. The tagging system is brilliant and the search function saves me hours every week.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Product Manager</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in slide-up" style="transition-delay: 0.2s;">
+                    <div class="testimonial-content">
+                        <p>As a student, I've tried dozens of note-taking apps. NoteZen stands out with its clean interface and powerful organization features. The mobile app is flawless.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>University Student</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="container">
+            <h2 class="section-title fade-in">Ready to Transform Your Note-Taking?</h2>
+            <p class="fade-in">Join over 500,000 users who have already discovered the power of organized thinking with NoteZen.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn fade-in">Download Now</a>
+                <a href="#" class="btn btn-outline fade-in" style="transition-delay: 0.2s;">See Pricing</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>NoteZen</h3>
+                    <p>The smart note organizer that helps you capture ideas, organize thoughts, and find information instantly.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 NoteZen. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>
